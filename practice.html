@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <style>
+    body {
+      height: 1800px;
+      background-color: black;
+      margin: 0;
+    }
+
+    .top-container {
+      width: 100px;
+      height: 70px;
+      background-color: yellow;
+      position: absolute;
+    }
+
+    .middle-container {
+      width: 100px;
+      height: 70px;
+      background-color: blue;
+      position: absolute;
+      left:800px;
+
+    }
+    .container{
+      
+      width:1010px;
+      height:70px;
+      position: relative;
+      top:200px;
+    }
+    .n{
+      width:1600px;
+      height:70px;
+      background-color: gray;
+      position: fixed;
+      z-index:1;
+
+    }
+    .bottom-container {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      top:200px;
+      left:200px;
+
+    }
+
+    .img1 {
+      width: 100px;
+      display: block;
+    }
+
+    .img2 {
+      width: 100px;
+    }
+
+    .para1 {
+      background-color: red;
+      display: inline-block;
+      width: 120px;
+    }
+
+    .para2 {
+      background-color: yellow;
+      display: inline-block;
+      width: 120px;
+    }
+
+    .para3 {
+      font-style: italic;
+      display: block;
+
+    }
+
+    .para3:hover {
+      display: none;
+
+    }
+  </style>
+</head>
+
+<body>
+ <div class="container">
+  <div class="n">
+  <div class="top-container">top container</div>
+
+  <div class="middle-container">middle container</div>
+</div>
+</div>
+<div class="bottom-container">bottom container</div>
+
+</body>
+
+</html>
