@@ -2,11 +2,17 @@ body {
     margin: 0;
     line-height: normal;
   }
-  .bg,
-  .original-1-icon {
+  .bg {
     position: absolute;
     top: 2px;
     height: 717px;
+    margin-bottom: 100px;
+
+  }
+  .original-1-icon {
+    position: absolute;
+    height: 717px;
+
   }
   .bg {
     left: 1px;
@@ -636,6 +642,9 @@ body {
     display: inline-block;
     width: 483.82px;
     height: 52.82px;
+  }
+  .hello{
+    color:#0d1748c6;
   }
   .material-symbolsadd-box-outli-icon {
     position: absolute;
