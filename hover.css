@@ -1,0 +1,31 @@
+
+  .home:hover{
+    border-bottom: 3px solid red;
+    border-bottom-right-radius: 20%;
+  }
+  .home:hover::after{
+
+}
+  #search-hover:after{
+    left: 430px;
+    width:8%;
+
+  }
+  #play-hover:after{
+    left: 640px;
+    width: 9%;
+  }
+  #categ-hover:after{
+    left:860px;
+    width: 10%;
+  }
+  #series-hover:after{
+    left: 1100px;
+    width: 7%;
+  }
+  .home:hover:after,#search-hover:hover:after,
+  #play-hover:hover:after, #categ-hover:hover:after,
+  #series-hover:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

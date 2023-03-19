@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="container1.css">
+    <link rel="stylesheet" href="container2.css">
+    <link rel="stylesheet" href="container3.css">
+    <title>Grid Layout Uses</title>
+    <style>
+        .container4{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+            grid-auto-rows: 75px; 
+            grid-gap: 5px;
+            grid-auto-flow:dense;
+        }
+        .horizontal{
+            grid-column: span 2;
+        }
+        .vertical{
+            grid-row: span 2;
+        }
+        .big{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- First Container -->
+    <p style="text-align: center; font-size: 30px;  font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;">Using Grid Template with defined rows and columns:</p>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="two">6</div>
+    </div>
+    <!-- 2nd Container -->
+    <p style="text-align: center; font-size: 30px;  font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;">Using Grid Areas:</p>
+    <div class="container2">
+        <div class="header">HEADER</div>
+        <div class="menu">MENU</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+        <div class="friends">FRIENDS</div>
+    </div>
+    <p style="text-align: center; font-size: 30px;  font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;">Using Grid Auto Fill, MinMax and Auto Rows to make responsive boxes</p>
+    <!-- 3rd Container -->
+    <div class="container3">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+        <div class="d">4</div>
+        <div class="e">5</div>
+        <div class="f">6</div>
+        <div class="g">7</div>
+        <div class="h">8</div>
+        <div class="i">9</div>
+        <div class="j">10</div>
+        <div class="k">11</div>
+        <div class="l">12</div>
+    </div>
+    <!-- 4th Container -->
+    <div class="container4">
+        <div id="a">1</div>
+        <div id="b" class="vertical">2</div>
+        <div id="c"class="horizontal">3</div>
+        <div id="d">4</div>
+        <div id="e">5</div>
+        <div id="f"class="big">6</div>
+        <div id="g">7</div>
+        <div id="h"class="vertical" >8</div>
+        <div id="i">9</div>
+        <div  id="j" class="horizontal">10</div>
+        <div id="k">11</div>
+        <div id="l" class="big">12</div>
+        <div id="a">13</div>
+        <div id="b"class="horizontal">14</div>
+        <div id="c">15</div>
+        <div id="d" class="big">16</div>
+        <div id="e">17</div>
+        <div id="f"class="vertical">18</div>
+    </div>
+</body>
+
+</html>
